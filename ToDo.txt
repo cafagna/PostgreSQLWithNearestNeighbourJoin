@@ -1,0 +1,2 @@
+1) Introduce support for Order by clause after an NNJ
+2) Introduce support for empty inner relation

@@ -1,0 +1,26 @@
+CREATE TABLE rt ( 
+e character varying,
+g character varying,
+t integer
+);
+CREATE TABLE st ( 
+e character varying,
+g character varying,
+t integer,
+m double precision);
+insert into rt values('1','A',10);
+insert into rt values('2','A',10);
+insert into rt values('6','A',10);
+insert into rt values('3','A',11);
+insert into rt values('8','A',12);
+insert into rt values('9','A',12);
+insert into rt values('4','B',4);
+insert into rt values('5','B',5);
+insert into st values('0','A',9, 7);
+insert into st values('0','A',10, 9);
+insert into st values('2','A',10, 5);
+insert into st values('6','A',10, 7);
+insert into st values('8','A',12, 100);
+insert into st values('13','A',12, 200);
+insert into st values('0','B',3, 7);
+insert into st values('5','B',5, 9);

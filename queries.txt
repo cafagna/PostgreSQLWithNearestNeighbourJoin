@@ -1,0 +1,14 @@
+# For each outer tuple r, find the inner tuple s that belongs to the same group G, and
+# holds either equality on E or similarity on T. 3 different implementations are provided:
+
+# 1) Store the last join matches in a memory buffer, in case they are also a match for the next tuple
+select * from rt rnnj st equal on e nn by g using t;
+
+# 2) Refetch m times an inner tuple that is join match for m different outer tuples
+select * from rt rnnj st equal on e nn by g using t backtrack;
+
+# 3) Let's aggregate ties using min, max, avg in case multiple nearest neighbours are found.
+select * from rt rnnj st equal on e nn by g using t max m;
+select * from rt rnnj st equal on e nn by g using t min m;
+select * from rt rnnj st equal on e nn by g using t avg m;
+

@@ -1,0 +1,9 @@
+Name: libecpg
+Description: PostgreSQL libecpg library
+Url: http://www.postgresql.org/
+Version: 9.3.4
+Requires: 
+Requires.private: libpq libpgtypes
+Cflags: -I/Users/francescocafagna/Desktop/postgresFEEDBASE/server/include
+Libs: -L/Users/francescocafagna/Desktop/postgresFEEDBASE/server/lib -lecpg
+Libs.private:  -lm -lpthread

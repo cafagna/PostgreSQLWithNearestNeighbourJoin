@@ -1,0 +1,5 @@
+#!/bin/sh
+./server/bin/pg_ctl -D datab -o "-F -i -p 5410" stop
+make 
+make install
+./server/bin/pg_ctl -D datab -o "-F -i -p 5410" start
